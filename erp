@@ -1,0 +1,37 @@
+ERP/
+│
+├── backend/        → API (Node + Express + PostgreSQL + Redis)
+│   ├── src/
+│   │   ├── routes/
+│   │   │   ├── logistics.routes.js
+│   │   │   ├── accounting.routes.js
+│   │   │   └── finance.routes.js
+│   │   ├── controllers/
+│   │   │   ├── logistics.controller.js
+│   │   │   ├── accounting.controller.js
+│   │   │   └── finance.controller.js
+│   │   ├── db.js
+│   │   ├── server.js
+│   │   └── app.js
+│   ├── package.json
+│   ├── Dockerfile
+│   └── docker-compose.yml
+│
+└── frontend/       → Interfaz (Next.js con dashboards)
+    ├── app/
+    │   ├── dashboard/
+    │   │   ├── page.js
+    │   │   ├── logistics/
+    │   │   │   └── page.js
+    │   │   ├── accounting/
+    │   │   │   └── page.js
+    │   │   └── finance/
+    │   │       └── page.js
+    │   └── layout.js
+    ├── components/
+    │   ├── Navbar.js
+    │   ├── Sidebar.js
+    │   └── Card.js
+    ├── package.json
+    ├── Dockerfile
+    └── next.config.js
